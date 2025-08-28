@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Model weights / large files
+*.pt
+
+# Data files (optional, if they’re large and not needed on GitHub)
+*.xlsx
+*.csv
