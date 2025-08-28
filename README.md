@@ -93,6 +93,10 @@ pip install -r requirements.txt
 # Run app
 streamlit run luxeestimate_pro.py
 ```
+Documentation & Insights
+
+-Prediction pipeline: Explore Predict.py for the model logic.
+-Data handling: View how you cleaned and analyzed your data in the notebook weather_home_prediction_.ipynb.
 
 🔑 API Keys Setup
 openweather_key = "your_openweather_api_key"
