@@ -37,8 +37,4 @@ Thumbs.db
 .mypy_cache/
 .pytest_cache/
 
-# ---- Data (optional, ignore large auto-generated files) ----
-*.csv
-*.xlsx
-*.parquet
-*.db
+
