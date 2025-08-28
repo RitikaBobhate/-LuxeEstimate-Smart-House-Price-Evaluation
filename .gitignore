@@ -4,7 +4,10 @@ __pycache__/
 *.pyo
 
 # Virtual environment
-.venv/
+# Ignore virtual environments
+venv/
+*/venv/
+
 
 # Streamlit secrets
 .streamlit/secrets.toml
