@@ -1,23 +1,44 @@
-# Python
+# ---- Python ----
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.manifest
+*.spec
 
-# Virtual environment
-# Ignore virtual environments
+# ---- Virtual Environments ----
 venv/
+.venv/
+env/
+ENV/
 */venv/
+*/.venv/
 
-
-# Streamlit secrets
-.streamlit/secrets.toml
-
-# Jupyter notebook checkpoints
+# ---- Jupyter ----
 .ipynb_checkpoints/
+*.ipynb.json
 
-# Model weights / large files
-*.pt
+# ---- VSCode / IDE ----
+.vscode/
+.idea/
 
-# Data files (optional, if they’re large and not needed on GitHub)
-*.xlsx
+# ---- OS Files ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs & Caches ----
+*.log
+*.pot
+*.pyc
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+# ---- Data (optional, ignore large auto-generated files) ----
 *.csv
+*.xlsx
+*.parquet
+*.db
