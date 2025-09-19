@@ -30,7 +30,10 @@ openai.api_key = st.secrets.get("openai_key", "")
 @st.cache_data
 def load_property_data():
     try:
-        df = pd.read_excel("geo_enriched_property_data_osm.xlsx")
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(BASE_DIR, "data", "geo_enriched_property_data_osm.xlsx")
+
+        df = pd.read_excel(file_path)
         df.columns = df.columns.str.lower().str.strip()
         
         # Validate required columns
