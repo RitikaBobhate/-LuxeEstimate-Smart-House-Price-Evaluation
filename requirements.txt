@@ -1,4 +1,4 @@
-﻿pip>=25.2
+pip>=25.2
 setuptools>=68.0.0
 wheel
 
@@ -45,4 +45,7 @@ pyarrow>=15.0
 # Web
 aiohttp>=3.9
 httpx>=0.26
+
+# OpenAI (old API support)
+openai==0.28.0
 
