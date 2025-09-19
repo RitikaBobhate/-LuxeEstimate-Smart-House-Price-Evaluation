@@ -406,7 +406,10 @@ def generate_local_response(input_data):
 @st.cache_data
 def load_and_preprocess_data():
     # Load the data
-    df = pd.read_excel(r"C:\Users\Ritika Bobhate\Downloads\WEATHER AND HOUSE-20250621T235306Z-1-001\WEATHER AND HOUSE\geo_enriched_property_data_osm.xlsx")
+    BASE_DIR = os.path.dirname(__file__)  # current script folder
+    DATA_PATH = os.path.join(BASE_DIR, "data", "geo_enriched_property_data_osm.xlsx")
+
+    df = pd.read_excel(DATA_PATH)
 
 
     # Normalize column names
