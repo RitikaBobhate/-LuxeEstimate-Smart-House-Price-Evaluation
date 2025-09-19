@@ -13,7 +13,7 @@ import requests
 from datetime import datetime, timedelta
 import openai
 from plotly.io import to_html
-
+import os
 
 # App configuration
 st.set_page_config(
